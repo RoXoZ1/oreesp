@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "oreesp",
+  "version": "${version}",
+  "name": "Ore ESP",
+  "description": "Client-side ore and mob ESP with tracers, vein labels, alerts and an in-game settings menu.",
+  "authors": ["you"],
+  "environment": "client",
+  "entrypoints": { "client": ["dev.oreesp.OreEspClient"] },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

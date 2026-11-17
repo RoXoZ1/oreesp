@@ -1,0 +1,26 @@
+ORE ESP — BUILD INSTRUCTIONS
+Minecraft: 26.3
+Fabric Loader: 0.19.5
+Java: 25
+
+IMPORTANT: This ZIP contains the mod's SOURCE PROJECT, not a compiled .jar.
+It cannot be placed directly into .minecraft/mods.
+
+To build on Windows:
+1. Install a 64-bit Java 25 JDK and make sure `java -version` reports 25.
+2. Install Gradle (a recent Gradle 9.x release compatible with Fabric Loom 1.17).
+3. Extract this ZIP.
+4. Open Command Prompt or PowerShell in the `oreesp` project folder (the folder containing build.gradle).
+5. Run: gradle build
+6. When the build succeeds, open: build\libs\
+7. Copy the normal `oreesp-1.0.0.jar` (not the `-sources.jar`) into:
+   %APPDATA%\.minecraft\mods
+8. Launch the Minecraft 26.3 Fabric profile. Make sure Fabric API for 26.3 is also installed.
+
+If the build fails, copy the complete error output from the first line marked FAILED
+or the first compiler error. The source may need API adjustments for the exact
+Minecraft 26.3 mappings/build available on your machine.
+
+In-game controls declared by this project:
+- X: toggle Ore ESP
+- Right Alt: open settings
